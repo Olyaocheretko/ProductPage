@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Product page</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<!--<link rel="shortcut icon" href="img/favicon.ico">-->
+	<link rel="shortcut icon" href="img/favicon.ico">
    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -55,23 +55,23 @@
 							<form action="#" class="contacts__form form" method="post" enctype="multipart/form-data">
 								<div class="form__item">
 									<label for="forUserName" class="form__label text">Name</label>
-									<input id="forUserName" autocomplete="off" type="text" class="form__input text-input" placeholder="UserName">
+									<input id="forUserName" autocomplete="off" type="text" class="form__input" placeholder="What is your name?">
 								</div>
 								<div class="form__item">
 									<label for="forUserSurname" class="form__label text">Surname</label>
-									<input id="forUserSurname" autocomplete="off" type="text" class="form__input text-input" placeholder="UserSurname">
+									<input id="forUserSurname" autocomplete="off" type="text" class="form__input" placeholder="What is your surname?">
 								</div>
 								<div class="form__item">
 									<label for="forUserEmail" class="form__label text">Email</label>
-									<input id="forUserEmail" autocomplete="off" type="email" class="form__input text-input" placeholder="user.mail.com">
+									<input id="forUserEmail" autocomplete="off" type="email" class="form__input" placeholder="Your email">
 								</div>
 								<div class="form__item">
 									<label for="forUserPhone" class="form__label text">Phone</label>
-									<input id="forUserPhone" autocomplete="off" type="tel" class="form__input text-input" placeholder="UserPhone">
+									<input id="forUserPhone" autocomplete="off" type="tel" class="form__input" placeholder="Your phone">
 								</div>
 								<div class="form__item">
 									<label for="forUserAddress" class="form__label text">Address</label>
-									<input id="forUserAddress" autocomplete="off" type="text" class="form__input text-input" placeholder="UserAddress">
+									<input id="forUserAddress" autocomplete="off" type="text" class="form__input" placeholder="Your address">
 								</div>
 							</form>
 						</div>
@@ -96,11 +96,11 @@
 							<div class="info__col info-contacts">
 								<h2 class="info-contacts__title title">Contacts info</h2>
 								<div class="info-contacts__body">
-									<p class="info-contacts__text text">Name: <span class="info-contacts__inner text-gray">UserName</span></p>
-									<p class="info-contacts__text text">Surname: <span class="info-contacts__inner text-gray">UserSurname</span></p>
-									<p class="info-contacts__text text">Email: <span class="info-contacts__inner text-gray">user.mail.com</span></p>
-									<p class="info-contacts__text text">Phone: <span class="info-contacts__inner text-gray">**********</span></p>
-									<p class="info-contacts__text text">Address: <span class="info-contacts__inner text-gray">UserAddress</span></p>
+									<p class="info-contacts__text text">Name: <span id="info_name" class="info-contacts__inner text-gray"></span></p>
+									<p class="info-contacts__text text">Surname: <span id="info_surname" class="info-contacts__inner text-gray"></span></p>
+									<p class="info-contacts__text text">Email: <span id="info_email" class="info-contacts__inner text-gray"></span></p>
+									<p class="info-contacts__text text">Phone: <span id="info_phone" class="info-contacts__inner text-gray"></span></p>
+									<p class="info-contacts__text text">Address: <span id="info_address" class="info-contacts__inner text-gray"></span></p>
 								</div>
 							</div>
 						</div>
