@@ -26,16 +26,24 @@
 							<div class="product__body">
 								<div class="product__row price-one">
 									<div class="price-one__col">
-										<p class="price-one__text text">Price: <span class="price-one__price text-gray">98$</span></p>
+										<p class="price-one__text text">Price:
+											<span id="price" class="price-one__price text-gray">98</span>
+											<span class="text-gray">$</span>
+										</p>
 									</div>
 									<div class="price-one__col quantity">
-										<div class="quantity__element quantity__min">-</div>
-										<div class="quantity__element quantity__number">1</div>
-										<div class="quantity__element quantity__plus">+</div>
+										<div class="quantity__element quantity__element-button quantity__min">-</div>
+										<div class="quantity__element quantity__number">
+											<input id="quantity" autocomplete="off" type="text" value="1" class="text-input quantity__input">
+										</div>
+										<div class="quantity__element quantity__element-button quantity__plus">+</div>
 									</div>
 								</div>
 								<div class="product__row price-all">
-									<p class="price-all__text text">Products sum: <span class="price-all__price text-gray">98$</span></p>
+									<p class="price-all__text text">Products sum:
+										<span id="totalPrice" class="price-all__price text-gray">98</span>
+										<span class="text-gray">$</span>
+									</p>
 								</div>
 							</div>
 						</div>
@@ -65,30 +73,7 @@
 									<label for="forUserAddress" class="form__label text">Address</label>
 									<input id="forUserAddress" autocomplete="off" type="text" class="form__input text-input" placeholder="UserAddress">
 								</div>
-
-								<!--<div class="form__line">
-									<div class="quantity">
-										<div class="quantity__button quantity__button_plus"></div>
-										<div class="quantity__input">
-											<input autocomplete="off" type="text" name="form[]" value="1">
-										</div>
-										<div class="quantity__button quantity__button_minus"></div>
-									</div>
-								</div>
-
-
-								<div class="form__line">
-									<div class="price">
-										<div class="price__range"></div>
-										<div class="price__inputs">
-											<input id="price-start" autocomplete="off" type="text" name="form[]" class="input">
-											<input id="price-end" autocomplete="off" type="text" name="form[]" class="input">
-										</div>
-									</div>
-								</div>-->
 							</form>
-
-
 						</div>
 					</section>
 
@@ -101,8 +86,11 @@
 								</div>
 								<div class="info-product__body">
 									<p class="info-product__text text">Name: <span class="info-product__inner text-gray">Nike Wmns Court Vision Mid</span></p>
-									<p class="info-product__text text">Quantity: <span class="info-product__inner text-gray">1</span></p>
-									<p class="info-product__text text">Purchase amount: <span class="info-product__inner text-gray">98$</span></p>
+									<p class="info-product__text text">Quantity: <span id="info_quantity" class="info-product__inner text-gray">1</span></p>
+									<p class="info-product__text text">Purchase amount:
+										<span id="info_price" class="info-product__inner text-gray">98</span>
+										<span class="text-gray">$</span>
+									</p>
 								</div>
 							</div>
 							<div class="info__col info-contacts">
