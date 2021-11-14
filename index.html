@@ -44,7 +44,49 @@
 					<section class="tabs__block _tabs-block">
 						<div class="tabs__block-section contacts">
 							<h2 class="contacts__title title">Contact form</h2>
+							<form action="#" class="contacts__form form" method="post" enctype="multipart/form-data">
+								<div class="form__item">
+									<label for="forUserName" class="form__label text">Name</label>
+									<input id="forUserName" autocomplete="off" type="text" class="form__input text-input" placeholder="UserName">
+								</div>
+								<div class="form__item">
+									<label for="forUserSurname" class="form__label text">Surname</label>
+									<input id="forUserSurname" autocomplete="off" type="text" class="form__input text-input" placeholder="UserSurname">
+								</div>
+								<div class="form__item">
+									<label for="forUserEmail" class="form__label text">Email</label>
+									<input id="forUserEmail" autocomplete="off" type="email" class="form__input text-input" placeholder="user.mail.com">
+								</div>
+								<div class="form__item">
+									<label for="forUserPhone" class="form__label text">Phone</label>
+									<input id="forUserPhone" autocomplete="off" type="tel" class="form__input text-input" placeholder="UserPhone">
+								</div>
+								<div class="form__item">
+									<label for="forUserAddress" class="form__label text">Address</label>
+									<input id="forUserAddress" autocomplete="off" type="text" class="form__input text-input" placeholder="UserAddress">
+								</div>
 
+								<!--<div class="form__line">
+									<div class="quantity">
+										<div class="quantity__button quantity__button_plus"></div>
+										<div class="quantity__input">
+											<input autocomplete="off" type="text" name="form[]" value="1">
+										</div>
+										<div class="quantity__button quantity__button_minus"></div>
+									</div>
+								</div>
+
+
+								<div class="form__line">
+									<div class="price">
+										<div class="price__range"></div>
+										<div class="price__inputs">
+											<input id="price-start" autocomplete="off" type="text" name="form[]" class="input">
+											<input id="price-end" autocomplete="off" type="text" name="form[]" class="input">
+										</div>
+									</div>
+								</div>-->
+							</form>
 
 
 						</div>
@@ -55,7 +97,7 @@
 							<div class="info__col info-product">
 								<h2 class="info-product__title title">Product info</h2>
 								<div class="info-product__image image image-small">
-									<img src="img/nike.jpg" class="info-product__img alt="Nike Wmns Court Vision Mid">
+									<img src="img/nike.jpg" class="info-product__img" alt="Nike Wmns Court Vision Mid">
 								</div>
 								<div class="info-product__body">
 									<p class="info-product__text text">Name: <span class="info-product__inner text-gray">Nike Wmns Court Vision Mid</span></p>
@@ -70,14 +112,13 @@
 									<p class="info-contacts__text text">Surname: <span class="info-contacts__inner text-gray">UserSurname</span></p>
 									<p class="info-contacts__text text">Email: <span class="info-contacts__inner text-gray">user.mail.com</span></p>
 									<p class="info-contacts__text text">Phone: <span class="info-contacts__inner text-gray">**********</span></p>
-									<p class="info-contacts__text text">Adress: <span class="info-contacts__inner text-gray">UserCity</span></p>
+									<p class="info-contacts__text text">Address: <span class="info-contacts__inner text-gray">UserAddress</span></p>
 								</div>
 							</div>
 						</div>
 					</section>
 				</div>
 			</div>
-
 		</div>
 	</div>
 
