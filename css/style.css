@@ -71,8 +71,6 @@ img {vertical-align: top;}
   transform: scale(1.1);
 }
 /*<NAVIGATION>===========*/
-.tabs {
-}
 .tabs__nav {
   display: flex;
 }
@@ -109,7 +107,7 @@ img {vertical-align: top;}
 .tabs__button._active {
   background-color: #3574ad;
 }
-/*<SECTIONS BODY>=======*/
+/*<SECTION BODY>=======*/
 .tabs__body {
   padding: 50px 50px 30px;
   box-shadow: 1px 0 5px 0 #b0aeae;
@@ -121,11 +119,7 @@ img {vertical-align: top;}
 .tabs__block._active {
   display: block;
 }
-.tabs__block-section {
-}
 /*<PRODUCT-1st block>=============================================================*/
-.product {
-}
 .product__img {
   max-width: 100%;
   height: auto;
@@ -181,11 +175,12 @@ img {vertical-align: top;}
   height: 40px;
   padding: 0 10px;
   border: 1px solid #eeebeb;
-  background-color: #d6e0ee;
+  background-color: #eff3f8;
   font-weight: 500;
   font-size: 16px;
   line-height: 27px;
   letter-spacing: 0.5px;
+  border-radius: 5px;
 }
 .form__input::placeholder {
   color: #b6b4b4;
@@ -204,7 +199,6 @@ img {vertical-align: top;}
   margin-bottom: 20px;
   flex: 0 1 50%;
   position: relative;
-  line-height: 33px;
 }
 .info__col:first-child {
   padding: 0 20px 0 0;

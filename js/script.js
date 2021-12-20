@@ -1,7 +1,7 @@
 //Tabs==================================================================
 const tabs = document.getElementById('tabs')
-const tabs_buttons = tabs.querySelectorAll('._tabs-button')
-const tabs_blocks = tabs.querySelectorAll('._tabs-block')
+const tabs_buttons = tabs.getElementsByClassName('_tabs-button')
+const tabs_blocks = tabs.getElementsByClassName('_tabs-block')
 
 for (let index = 0; index < tabs_buttons.length; index++) {
   let tabs_button = tabs_buttons[index]
@@ -18,42 +18,45 @@ for (let index = 0; index < tabs_buttons.length; index++) {
   }
 }
 //Quantity==============================================================
-const quantityButtons = document.querySelectorAll('.quantity__element-button')
+const quantityChangingElements = document.getElementsByClassName('quantity__element-button')
 
-for (let index = 0; index < quantityButtons.length; index++) {
-  let quantityButton = quantityButtons[index]
+for (let index = 0; index < quantityChangingElements.length; index++) {
+  let quantityChangingElement = quantityChangingElements[index]
 
-  quantityButton.onclick = function(event) {
-    const quantityInput = document.getElementById('quantity')
-    let value = quantityInput.value
-    const infoQuantityElement = document.getElementById('info_quantity')
-    quantityButton.classList.contains('quantity__plus') ?  value++ : value--
-    value = value < 1 ? 1 : value
-    quantityInput.value = value
-    infoQuantityElement.textContent = `${value}`
+  quantityChangingElement.onclick = function(event) {
+    const quantityElement = document.getElementById('quantity')
+    let quantity = quantityElement.value
 
-    const priceElement = document.getElementById('price')
-    let price = priceElement.textContent || priceElement.innerText
-    price = +price
-    let totalPrice = price * value
-    const totalPriceElement = document.getElementById('totalPrice')
-    const infoTotalPriceElement = document.getElementById('info_price')
-    totalPriceElement.textContent = `${totalPrice}`
-    infoTotalPriceElement.textContent = `${totalPrice}`
+    quantityChangingElement.classList.contains('quantity__plus') ?  quantity++ : quantity--
+    quantity = quantity <= 0 ? 0 : quantity
+    quantityElement.value = quantity
+
+    const quantity_output = document.getElementById('quantity_output')
+    quantity_output.textContent = `${quantity}`
+//price
+    const priceBase = document.getElementById('price_base')
+    let price = +priceBase.textContent || +priceBase.innerText
+    let totalPrice = price * quantity
+
+    const totalPrice_output1 = document.getElementById('totalPrice_output1')
+    const totalPrice_output2 = document.getElementById('totalPrice_output2')
+    totalPrice_output1.textContent = `${totalPrice}`
+    totalPrice_output2.textContent = `${totalPrice}`
   }
 }
 //Contact info==========================================================
-const contactsButtons = document.querySelectorAll('.form__input')
+const contactsInputs = document.getElementsByClassName('form__input')
 
-for (let index = 0; index < contactsButtons.length; index++) {
-  let contactsButton = contactsButtons[index]
+for (let index = 0; index < contactsInputs.length; index++) {
+  let contactsInput = contactsInputs[index]
 
-  contactsButton.oninput = function(event) {
+  contactsInput.oninput = function(event) {
     let nameValue = document.getElementById('forUserName').value
     let surnameValue = document.getElementById('forUserSurname').value
     let emailValue = document.getElementById('forUserEmail').value
     let phoneValue = document.getElementById('forUserPhone').value
     let addressValue = document.getElementById('forUserAddress').value
+
     const infoNameInput = document.getElementById('info_name')
     const infoSurnameInput = document.getElementById('info_surname')
     const infoEmailInput = document.getElementById('info_email')
