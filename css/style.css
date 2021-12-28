@@ -216,9 +216,12 @@ img {vertical-align: top;}
   background-color: #eeebeb;
   bottom: -5%;
 }
-.info-product__img{
+.info-product__img {
   max-width: 100%;
   height: auto;
+}
+.info-product__text, .info-contacts__text {
+  margin-bottom: 10px;
 }
 /*<MEDIA>========================================================================*/
 @media (max-width: 767px) {
