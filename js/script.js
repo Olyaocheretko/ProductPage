@@ -17,8 +17,7 @@ for (let index = 0; index < quantityChangingElements.length; index++) {
 }
 
 for (let index = 0; index < contactsInputs.length; index++) {
-  let contactsInput = contactsInputs[index]
-  contactsInput.onchange = function(event) {
+  contactsInputs[index].onchange = function(event) {
     let infoFieldId = this.id.replace('form', 'info')
     document.getElementById(infoFieldId).textContent = this.value
   }
